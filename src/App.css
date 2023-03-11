@@ -1,0 +1,97 @@
+.App {
+  display: flex;
+  flex-direction: column; /* update */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.textbox {
+  width: 300px;
+  height: 50px;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 20px; /* add */
+}
+
+.header {
+  color: white;
+  font-size: 20px; /* add */
+  /* margin-bottom: 20px; add */
+}
+
+.submission {
+  display: flex;
+  flex-direction: column; /* add */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #282c34; */
+}
+
+.response {
+  align-self: stretch; /* update */
+  margin-top: auto;
+  /* background-color: #282c34; */
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+img {
+  width: 100px;
+}
+
+.Kevin {
+  font-size: 5px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.genie {
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  animation: move 30s linear infinite;
+}
+
+.genie img {
+  animation: disappear 90s linear forwards;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px));
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
